@@ -1,0 +1,275 @@
+.sli {
+    position: absolute;
+    top: 96px;
+    width: 100%;
+    height: 100vh;
+}    
+/*Texto inicial*/
+.info {
+    display: flex;
+    width: 90%;
+    margin: 90px auto;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+    flex: 1;
+    padding: 30px;
+    margin: 40px;
+
+}
+
+.text-content h1 {
+    font-size: 2.5em;
+    color: #ff8800;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.line {
+    width: 50px;
+    height: 3px;
+    background-color: #ff7b00;
+    margin-top: 20px;
+}
+
+¡
+
+  
+  .foot {
+    position: relative;
+    top: 90px;
+    padding: 90px;
+  }
+
+  /*Pie de pagina*/
+  .footer-container {
+    background-color: black; 
+    color: white;
+    font-size: 15px;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left, .footer-center, .footer-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.logo {
+    width: 180px; 
+    margin-bottom: 20px;
+}
+
+.address, .copyright {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.footmenu {
+    list-style: none;
+    padding: 0;
+}
+
+.footmenu li {
+    margin-bottom: 10px;
+}
+
+.footmenu a {
+    color: white;
+    text-decoration: none;
+}
+
+.follow {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.contact, .email {
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ffa939; 
+}
+
+
+
+
+
+
+
+
+
+ /* Chatbot Styles */
+         /* Estilos del bot */
+         #chatbot-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 10%;
+            height: auto;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        #chatbot-container {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 300px;
+            height: 400px;
+            background-color: #f5f5f5;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            z-index: 100;
+            font-size: 12px;
+
+        }
+
+        #chatbot-messages {
+            overflow-y: auto;
+            flex: 1;
+            padding: 10px;
+            
+        }
+
+        #chatbot-input {
+            display: flex;
+        }
+
+        #chatbot-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 15px 0 0 15px;
+            outline: none;
+        }
+
+        #chatbot-input button {
+            padding: 10px;
+            border: none;
+            background-color: #fc7f02;
+            color: white;
+            cursor: pointer;
+            border-radius: 0 15px 15px 0;
+        }
+
+        .message {
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .user-message {
+            background-color: #fc9002;
+            color: white;
+            align-self: flex-end;
+        }
+
+        .bot-message {
+            background-color: #e0e0e0;
+            color: black;
+            align-self: flex-start;
+        }
+
+       
+
+@media screen and (max-width: 768px) {
+    .sli {
+        position: absolute;
+        top: 136px;
+        width: 100%;
+        height: 100vh;
+    }    
+    
+    .info {
+        flex-direction: column; 
+        align-items: center; 
+        margin: 20px auto;
+    }
+
+    .text-content {
+        margin: 20px 0;
+        padding: 10px;
+        text-align: justify;
+        width: 100%; 
+    }
+
+    .contain img {
+        width: 100%;
+        max-width: 100%; 
+    }
+
+    .text-content h2 {
+        font-size: 24px; 
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-left, .footer-center, .footer-right {
+        padding: 10px;
+        flex: none;
+        width: 100%;
+    }
+
+    .social-icons {
+        justify-content: center;
+    
+    }
+}
+
+@media (max-width: 480px) {
+    .text-content h2 {
+        font-size: 22px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+    }
+
+    .social-icon img {
+        width: 25px;
+        height: 25px;
+    }
+}

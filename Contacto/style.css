@@ -1,0 +1,220 @@
+/*Formulario*/
+form h1 {
+    color: rgb(255, 135, 23);   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 35px;
+    }
+    
+    #contacto {
+      padding: 70px;
+      background-color: #ffaa65;
+      text-align: center;
+    }
+    
+    .contact-container {
+      display: flex;
+      justify-content: space-between; 
+      align-items: flex-start;
+      gap: 20px;
+      flex-wrap: wrap;
+      width: 100%;
+      color: white;
+    }
+    
+    form {
+      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background: #000000;
+      padding: 50px;
+      border: none; 
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+      width: 50%;
+    }
+    
+    form input, form textarea, form button {
+      padding: 12px;
+      font-size: 1.1rem; 
+      border: 1px solid #9e9e9e;
+      border-radius: 5px; 
+      width: calc(100% - 24px); 
+    }
+    
+    form input:focus, form textarea:focus, form select:focus {
+      border: 2px solid #ff9822;
+      outline: none;
+      box-shadow: 0 0 5px rgba(255, 246, 151, 0.5); 
+    }
+    
+    form button {
+      background: #ff9721;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out, transform 0.2s;
+      font-weight: bold; /*negrita*/
+    }
+    
+    form button:hover {
+      background: #aa6f00;
+      transform: scale(1.05);
+    }
+    
+    .service-selection {
+      max-width: 400px; 
+      padding: 20px; 
+      text-align: center;
+    }
+    
+    .service-selection .logo {
+      max-width: 100%; 
+      height: auto;
+    }
+    
+    
+ /*Pie de pagina*/
+    .foot {
+        position: relative;
+        top: 90px;
+      }
+    
+    .footer-container {
+        background-color: black; 
+        color: white;
+        font-size: 15px;
+        padding: 20px 0;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    .footer-left, .footer-center, .footer-right {
+        flex: 1;
+        padding: 20px;
+    }
+    
+    .logo {
+        width: 180px; 
+        margin-bottom: 20px;
+    }
+    
+    .address, .copyright {
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+    
+    .footmenu {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .footmenu li {
+        margin-bottom: 10px;
+    }
+    
+    .footmenu a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    .follow {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    .social-icons {
+        display: flex;
+    }
+    
+    .social-icon img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    
+    .contact, .email {
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+    
+    .footer-bottom {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #ffa939; 
+    }
+    
+
+
+    @media screen and (max-width: 768px) {
+        /* Formulario */
+        #contacto {
+            padding: 30px;
+            background-color: #ffaa65;
+        }
+    
+        .contact-container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    
+        form {
+            width: 100%;
+            padding: 20px;
+            box-shadow: none; /* Elimina la sombra */
+        }
+    
+        form input, form textarea, form button {
+            width: 100%;
+        }
+    
+        form h1 {
+            font-size: 28px;
+        }
+    }
+
+    @media (max-width: 768px) {
+
+        .footer-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    
+        .footer-left, .footer-center, .footer-right {
+            padding: 10px;
+            flex: none;
+            width: 100%;
+        }
+    
+        .social-icons {
+            justify-content: center;
+        
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .foot {
+            top: 0;
+            padding: 30px;
+        }
+    
+        .foot iframe {
+            width: 100%;
+            height: 250px;
+        }
+    
+        .foot h2 {
+            font-size: 1.5rem;
+        }
+    
+        .foot p {
+            font-size: 1rem;
+        }
+    }

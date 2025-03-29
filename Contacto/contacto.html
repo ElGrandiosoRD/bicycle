@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="bot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0Hhonpy0aDPbj/nfTqlcYiRWzcLGQYO40IXox5fztLgvjDI4Limvb8l2mZXYZs9gKSjRBOcKg4gQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="top-bar-container container">
+                <div class="top-bar-left">
+                    <div class="currency-dropdown">
+                        <select id="currencySelector">
+                            <option value="USD">USD <span class="math-inline"></option>
+                                <option value\="DOP"\>DOP</span></option>
+                        </select>
+                    </div>
+                </div>
+                <div class="top-bar-right">
+                    <span class="compare" style="font-size: 12px;">
+                        <a href="../Loging/loging.html" class="social">
+                            <p style="    color: #ffaa0c; text-decoration: none;">LOGING</p>
+                         </a>
+                             RD$0.00
+                                <div class="submenu">
+                                    <img src="imgProduct/carrito.png" id="img-carrito" alt="carrito" width="70%" style="margin:  10%;">
+                                    <div id="carrito">
+                                        <table id="lista-carrito">
+                                            <thead>
+                                                <tr>
+                                                    <th>Imagen</th>
+                                                    <th>Nombre</th>
+                                                    <th>Precio</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
+                                        <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                                    </div>
+                                </div>
+                            </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="menu container">
+            <img src="imgProduct/logo.png" alt="Logo CMRA" class="logo" width="20%">
+
+            <div class="search-bar">
+                <div class="search-bar-container container">
+                    <input type="text" placeholder="Buscar Nombre del Producto">
+                    <select name="categorias">
+                        <option value="">CATEGORIAS</option>
+                        <option value="bicicletas">Bicicletas</option>
+                        <option value="bicicletas-electricas">Bicicletas Electricas</option>
+                        <option value="bicicletas-montana">Bicicletas de Montaña</option>
+                        <option value="bicicletas-carretera">Bicicletas de Carretera</option>
+                        <option value="bicicletas-urbanas">Bicicletas Urbanas</option>
+                        <option value="bicicletas-ninos">Bicicletas para Niños</option>
+                        <option value="accesorios-bicicletas">Accesorios para Bicicletas</option>
+                        <option value="componentes-bicicletas">Componentes de Bicicletas</option>
+                    </select>
+
+                </div>
+            </div>
+            <label for="menu-toggle">
+                <img src="../imgProduct/menu.png" class="menu-icono" alt="Menú">
+            </label>
+            <input type="checkbox" id="menu-toggle">
+            
+
+            <nav class="navbar">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../AccesoriosBicicleta/servicios.html">Accessorios de Bicicletas</a></li>
+                    <li><a href="../Bicicleta/servicios.html">Bicicleta</a></li>
+                    <li><a href="../Contacto/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div> 
+
+    </header>
+    
+
+    <img id="chatbot-icon" src="imgProduct/bot1.png" alt="Chatbot">
+
+    <div id="chatbot-container">
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input">
+            <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+            <button id="send-btn">Enviar</button>
+        </div>
+    </div>
+
+    <section id="contacto">
+            <br><br><br>
+
+        <div class="contact-container" style="align-items: center; justify-content: center;">
+
+          <form id="contact-form" method="post" action="/send_email">
+            <h1>¿En que podemos ayudarte?</h1>
+            <br> <br>
+            <label for="nombre"><h3>Nombre y Apellido:</h3></label>
+            <input type="text" id="nombre" name="nombre" required>
+      
+            <label for="email"><h3>Correo electrónico:</h3></label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="mensaje"><h3>Mensaje:</h3></label>
+            <textarea id="mensaje" name="mensaje" rows="7" required></textarea>
+      
+            <button type="submit"><h3>Enviar</h3></button>
+          </form>
+        </div>
+      </section>
+
+
+
+    <section class="foot" style="text-align: center; margin: 35px; background-color: black; padding: 0; margin: 0;">
+        <h2>Puedes encontranos en:</h2>
+        <div class="direccion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1644.683075548653!2d-69.97293628956045!3d18.431194279781614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea56190c43551bd%3A0xd64286566e5f6a8f!2sAv.%20Independencia%2C%20Santo%20Domingo!5e0!3m2!1ses!2sdo!4v1743016911358!5m2!1ses!2sdo" width="1000" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </section>
+            <p style="text-align: center; background-color: black; padding: 0; margin: 0; ">Av. Bartolome Colon C# 3, Santo Domingo, Republica Dominicana <br> <br></p>   
+             </div>
+</section>
+
+<section class="footer-container">
+    <div class="footer-content">
+        <div class="footer-left">
+            <img src="imgProduct/logo.png" alt="Logo CMRA" class="logo">
+            <p class="copyright">&copy; @Bicycle</p>
+        </div>
+        <div class="footer-center">
+            <ul class="footmenu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="../Historia/sobreNosotros.html">Sobre nosotros</a></li>
+                <li><a href="../Sevicios/servicios.html">servicios</a></li>
+                <li><a href="../Contacto/contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-right">
+            <p class="follow">Siguenos</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><img src="imgProduct/facebook.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="imgProduct/youtube.png" alt="YouTube"></a>
+                <a href="#" class="social-icon"><img src="imgProduct/whatsAap.png" alt="whatsAap"></a>
+            </div>
+            <p class="contact">Tel: (839) 888-4400</p>
+            <p class="contact">WhatsApp: (849) 892-0047</p>
+            <p class="email">bicycle12@cmra.do</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Todos los derechos reservados. CMRA | Diseño creado por Grupo 9 Estudiantes De la UASD</p>
+    </div>
+</section>
+
+<script src="bot.js"></script>
+</body>
+</html>

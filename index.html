@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicycle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0Hhonpy0aDPbj/nfTqlcYiRWzcLGQYO40IXox5fztLgvjDI4Limvb8l2mZXYZs9gKSjRBOcKg4gQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="bot.css">
+    <link rel="stylesheet" href="sliper.css">
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar">
+            <div class="top-bar-container container">
+                <div class="top-bar-left">
+                    <div class="currency-dropdown">
+                        <select id="currencySelector">
+                            <option value="USD">USD</option>
+                            <option value="DOP">DOP</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="top-bar-right">
+                    <span class="compare" style="font-size: 12px;">
+                        <a href="Loging/loging.html" class="social">
+                            <p style="color: #ffaa0c; text-decoration: none;">LOGING</p>
+                        </a>
+                        RD$0.00
+                        <div class="submenu">
+                            <img src="imgProduct/carrito.png" id="img-carrito" alt="carrito" width="70%" style="margin: 10%;">
+                            <div id="carrito">
+                                <table id="lista-carrito">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+                                <a href="#" id="vaciar-carrito" class="btn-2">Vaciar Carrito</a>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="menu container">
+            <img src="imgProduct/logo.png" alt="Logo CMRA" class="logo" width="20%">
+            <div class="search-bar">
+                <div class="search-bar-container container">
+                    <input type="text" placeholder="Buscar Nombre del Producto">
+                    <select name="categorias">
+                        <option value="">CATEGORIAS</option>
+                        <option value="bicicletas">Bicicletas</option>
+                        <option value="bicicletas-electricas">Bicicletas Electricas</option>
+                        <option value="bicicletas-montana">Bicicletas de Montana</option>
+                        <option value="bicicletas-carretera">Bicicletas de Carretera</option>
+                        <option value="bicicletas-urbanas">Bicicletas Urbanas</option>
+                        <option value="bicicletas-ninos">Bicicletas para Ninos</option>
+                        <option value="accesorios-bicicletas">Accesorios para Bicicletas</option>
+                        <option value="componentes-bicicletas">Componentes de Bicicletas</option>
+                    </select>
+                </div>
+            </div>
+            <label for="menu-toggle">
+                <img src="imgProduct/menu.png" class="menu-icono" alt="Menu">
+            </label>
+            <input type="checkbox" id="menu-toggle">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="AccesoriosBicicleta/servicios.html">Accesorios de Bicicletas</a></li>
+                    <li><a href="Bicicleta/servicios.html">Bicicleta</a></li>
+                    <li><a href="Contacto/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <img id="chatbot-icon" src="imgProduct/bot1.png" alt="Chatbot">
+    <div id="chatbot-container">
+        <div id="chatbot-messages"></div>
+        <div id="chatbot-input">
+            <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+            <button id="send-btn">Enviar</button>
+        </div>
+    </div>
+
+
+    <li class="sli">
+        <div class="slider-container">
+            <div class="slider-wrapper swiper-wrapper">
+                <div class="slider-item swiper-slide">
+                    <div class="slide-content" style="margin: 0 55px;">
+                        <h3 class="slide-subtitle">Rendimiento y Velocidad</h3>
+                        <h2 class="slide-title">Descubre la bicicleta perfecta para ti</h2>
+                        <p class="slide-description">Explora nuestra seleccion de bicicletas diseñadas para velocidad, resistencia y comodidad en cada trayecto.</p>
+                        <a href="#" class="slide-button"> <span>Ver mas</span> </a>
+                    </div>
+                </div>
+                <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                        <h3 class="slide-subtitle">Ciclismo de Montana</h3>
+                        <h2 class="slide-title">Domina cualquier terreno con nuestras MTB</h2>
+                        <p class="slide-description">Nuestras bicicletas de montana te ofrecen estabilidad y control en los senderos mas desafiantes.</p>
+                        <a href="#" class="slide-button"> <span>Ver mas</span> </a>
+                    </div>
+                </div>
+                <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                        <h3 class="slide-subtitle">Descubre mas de nosotros</h3>
+                        <h2 class="slide-title" style="color: #ffaa0c;">Nuestra Historia</h2>
+                        <p class="slide-description">Alkisd kwwires as camiset altio aksi ersenon compreiodt najatar con a sliol.</p>
+                        <a href="#historia" class="slide-button"> <span>Ver mas</span> </a>
+                    </div>
+                </div>
+                <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                        <h3 class="slide-subtitle">Bicicletas Urbanas</h3>
+                        <h2 class="slide-title">Muevete con estilo y eficiencia</h2>
+                        <p class="slide-description">Encuentra la bicicleta ideal para desplazarte por la ciudad de manera rapida y ecologica.</p>
+                        <a href="#" class="slide-button"> <span>Ver mas</span> </a>
+                    </div>
+                </div>
+                <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                        <h3 class="slide-subtitle">Bicicletas para Ninos</h3>
+                        <h2 class="slide-title">Diversion y seguridad en cada pedaleada</h2>
+                        <p class="slide-description">Las mejores opciones de bicicletas para que los mas pequeños disfruten de cada aventura.</p>
+                        <a href="#" class="slide-button"> <span>Ver mas</span> </a>
+                    </div>
+                </div>
+                <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                        <h3 class="slide-subtitle">Ciclismo de Ruta</h3>
+                        <h2 class="slide-title">La maxima velocidad sobre el asfalto</h2>
+                        <p class="slide-description">Bicicletas aerodinamicas y ligeras para ciclistas que buscan alto rendimiento en carretera.</p>
+                        <a href="#" class="slide-button"> <span>Ver mas</span> </a>
+                    </div>
+                </div>
+                <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                        <h3 class="slide-subtitle">Energia sin limites</h3>
+                        <h2 class="slide-title">Explora con nuestras bicicletas electricas</h2>
+                        <p class="slide-description">Pedalea mas lejos con el impulso extra de nuestras bicicletas electricas de ultima generacion.</p>
+                        <a href="#" class="slide-button"> <span>Ver mas</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="header-content container">
+        <div class="header-img">
+            <img src="imgProduct/bbb.gif" alt="" width="100%">
+        </div>
+        <div class="header-txt">
+            <h1>Orbea bikes</h1>
+            <p>Una De Las Mejores Marcas De Bicicletas</p>
+            <a href="Informacion/orbea.html" class="btn-1">Saber Mas</a> <br><br>
+        </div>
+    </div>
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Bienvenido a</h2>
+            <h1>Bicycle, TU TIENDA DE BICICLETAS</h1>
+            <p>Descubre en nuestra tienda los ultimos modelos y una amplia gama de productos para ciclistas. Encuentra lo que necesitas para potenciar tus rutas sobre dos ruedas.</p>
+            <a href="../Bicicleta/servicios.html" class="btn">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/bicycle.png" alt="Bici"> Comprar
+            </a>
+        </div>
+    </section>
+
+
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imgProduct/ofer2.jpg" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Sillin</h3>
+                <a href="../AccesoriosBicicleta/servicios.html" class="btn-2">Comprar</a>
+            </div>
+        </div>
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imgProduct/ofer1.jpg" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Pedales</h3>
+                <a href="../AccesoriosBicicleta/servicios.html" class="btn-2">Comprar</a>
+            </div>
+        </div>
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="imgProduct/ofer3.jpg" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Desviador</h3>
+                <a href="../AccesoriosBicicleta/servicios.html" class="btn-2">Comprar</a>
+            </div>
+        </div>
+    </section>
+
+
+    <div style="margin: 20px 90px;">
+        <img src="imgProduct/1.png" alt="" width="100%">
+    </div>
+    <div style="margin: 20px 70px;">
+    </div>
+
+
+    <section class="hero1">
+        <div class="hero-content">
+            <h2>Confia en Nosotros</h2>
+            <h1>DIPONEMOS DE LA MEJORES TECHOLOGIAS EN BICICLETAS</h1>
+            <p>Descubre en nuestra tienda los ultimos modelos y una amplia gama de productos para ciclistas. Encuentra lo que necesitas para potenciar tus rutas sobre dos ruedas.</p>
+            <a href="../AccesoriosBicicleta/servicios.html" class="btn">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/bicycle.png" alt="Bici"> Comprar
+            </a>
+        </div>
+    </section>
+    <img src="imgProduct/curva1.png" alt="Bici" width="100%">
+    <div id="historia"></div>
+
+
+
+    <section class="info" style="background-color: #fbfbfb">
+        <div class="text-content">
+            <h1>Nuestra Historia</h1><br><br>
+            <p style="text-align: justify;">
+                La tienda Bicycle abrio sus puertas al publico el 27 de marzo de 2007 con la mision de ofrecer a los ciclistas las mejores bicicletas y accesorios del mercado. Desde sus inicios, ha sido un punto de encuentro para los amantes del ciclismo, brindando productos de alta calidad y un servicio excepcional. Con el paso de los años, hemos evolucionado, incorporando tecnologia de vanguardia y asesoramiento especializado para ayudar a cada cliente a encontrar la bicicleta perfecta.
+            </p>
+            <div class="line"></div>
+        </div>
+        <div class="img-content">
+            <section class="conta">
+                <img src="imgProduct/señor.jpg" alt="">
+            </section>
+        </div>
+    </section>
+
+
+    <section class="info">
+        <div class="text-content">
+            <h1> Marcas Disponibles</h1> <br><br>
+            <p style="text-align: center; text-align: justify; ">
+                <img src="https://bikepa.es/wp-content/uploads/2021/04/Mejores-marcas-de-bicicletas.jpg" alt="Bici" width="100%">
+        </div>
+    </section>
+
+
+    <section class="contenedor-bloques">
+        <div class="bloque">
+            <div class="icon-txt">
+                <h3>Mision</h3>
+                <p>amet consectetur adipisicing elit</p>
+            </div>
+        </div>
+        <div class="bloque">
+            <div class="icon-txt">
+                <h3>Vision</h3>
+                <p>amet consectetur adipisicing elit</p>
+            </div>
+        </div>
+        <div class="bloque">
+            <div class="icon-txt">
+                <h3>Valores</h3>
+                <p>amet consectetur adipisicing elit</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="foot" style="text-align: center; margin: 35px;">
+        <h2>Puedes encontranos en:</h2>
+        <div class="direccion">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1644.683075548653!2d-69.97293628956045!3d18.431194279781614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea56190c43551bd%3A0xd64286566e5f6a8f!2sAv.%20Independencia%2C%20Santo%20Domingo!5e0!3m2!1ses!2sdo!4v1743016911358!5m2!1ses!2sdo" width="1000" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p style="text-align: center;">Av. Bartolome Colon C# 3, Santo Domingo, Republica Dominicana <br> <br></p>
+    </section>
+
+
+    <section class="footer-container">
+        <div class="footer-content">
+            <div class="footer-left">
+                <img src="imgProduct/logo.png" alt="Logo CMRA" class="logo">
+                <p class="copyright">© @Bicycle</p>
+            </div>
+            <div class="footer-center">
+                <ul class="footmenu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="../Historia/sobreNosotros.html">Sobre nosotros</a></li>
+                    <li><a href="../Sevicios/servicios.html">servicios</a></li>
+                    <li><a href="../Contacto/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <p class="follow">Siguenos</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><img src="imgProduct/facebook.png" alt="Facebook"></a>
+                    <a href="#" class="social-icon"><img src="imgProduct/youtube.png" alt="YouTube"></a>
+                    <a href="#" class="social-icon"><img src="imgProduct/whatsAap.png" alt="whatsAap"></a>
+                </div>
+                <p class="contact">Tel: (839) 888-4400</p>
+                <p class="contact">WhatsApp: (849) 892-0047</p>
+                <p class="email">bicycle12@cmra.do</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Todos los derechos reservados. CMRA | Diseño creado por Grupo 9 Estudiantes De la UASD</p>
+        </div>
+    </section>
+
+</li>
+
+    <script src="bot.js"></script>
+    <script src="sliper.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script src="path/to/your-slider.js" defer></script>
+</body>
+</html>
